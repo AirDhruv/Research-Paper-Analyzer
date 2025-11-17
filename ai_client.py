@@ -9,7 +9,7 @@ class AIClient:
             raise ValueError("GOOGLE_API_KEY not found in .env")
 
         # ✔ Correct and fully supported model for your key
-        self.model = "models/gemini-pro-latest"
+        self.model = "models/gemini-flash-latest"
 
         # ✔ Correct REST API endpoint for Generative Language API
         self.url = f"https://generativelanguage.googleapis.com/v1beta/{self.model}:generateContent"

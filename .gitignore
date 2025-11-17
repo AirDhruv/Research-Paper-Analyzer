@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
+*.log
+
+# Environment
+.env
+venv/
+.env.bak
+*.sqlite3
+.DS_Store
+
+# Streamlit Cache
+.streamlit/
+**/.streamlit/
+
+# VSCode
+.vscode/
+.history/
+*.code-workspace
+
+# PyCharm
+.idea/
+
+# Byte-compiled / cache
+*.pyc
+*.pkl
+*.pickle
+*.joblib
+
+# Build artifacts
+build/
+dist/
+*.spec
+
+# PDF / data uploads
+uploads/
+temp/
+*.pdf
+
+# OS Files
+Thumbs.db
+Desktop.ini

@@ -1,19 +1,23 @@
 SUMMARY_PROMPT_TEMPLATE = """
-You are an expert research assistant. Read the following chunk of an academic paper and produce a concise, structured summary containing the following sections:
+You are an expert research analyst. Your task is to generate a clear, structured,
+human-readable summary from a section of an academic research paper.
 
+Formatting Rules:
+- DO NOT use JSON.
+- DO NOT use any braces like {{ }} except the one used for inserting text.
+- DO NOT output arrays, objects, or code blocks.
+- Write only clean text with headings and paragraphs.
 
-1. Title (if available) — otherwise write "Unknown Title"
-2. Domain/Area
-3. Problem statement (1-2 sentences)
-4. Approach/Methods (bulleted list)
-5. Key results / findings (bulleted list)
-6. Strengths and weaknesses (short)
-7. Important citations mentioned (short list)
-8. 3 suggested keywords
+Required Output Sections:
+1. Overview
+2. Problem Statement
+3. Methodology
+4. Key Findings
+5. Conclusion
 
+TEXT TO SUMMARIZE:
+---------------------
+{paper_text}
 
-Paper chunk:\n{paper_text}
-
-
-Respond in JSON format using keys: title, domain, problem, methods, results, strengths_weaknesses, citations, keywords
+Now produce the structured summary.
 """
