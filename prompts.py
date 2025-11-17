@@ -1,5 +1,5 @@
 BRIEF_SUMMARY_PROMPT = """
-You are an expert research analyst. Produce a short (7-8 sentences) plain-English summary of the text below.
+You are an expert research analyst. Produce a short (3-4 sentences) plain-English summary of the text below.
 Do NOT output JSON or code fences. Keep it concise and high-level.
 
 Text:
